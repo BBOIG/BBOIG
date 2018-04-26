@@ -13,7 +13,7 @@ namespace ConsoleApplication1
             Console.Clear();
 
             // 顏色
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
 
             // 輸入
             Console.Write("請輸入身高(公分):");
