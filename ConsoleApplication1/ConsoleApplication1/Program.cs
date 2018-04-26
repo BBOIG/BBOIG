@@ -27,21 +27,37 @@ namespace ConsoleApplication1
             // 計算
             Console.Write("BMI=" + BMI);
 
-            // 結果
-            if (BMI >= 27)
-            {
-                Console.Write("過重了!");
-            }
+            // 判斷 BMI 
+            if (BMI < 16.5)
+                Console.WriteLine(" 免役 & 過輕 ");
 
-            if (BMI < 18.5)
-            {
-                Console.Write("過輕了!");
-            }
+            else if (BMI >= 16.5 && BMI < 17)
+                Console.WriteLine(" 替代役 & 過輕 ");
 
-            if (BMI > 18.5 && BMI < 24)
-            {
-                Console.WriteLine("標準體重");
-            }
+            else if (BMI >= 17 && BMI < 18.5)
+                Console.WriteLine(" 常備役 & 過輕 ");
+
+            else if (BMI >= 18.5 && BMI < 24)
+                Console.WriteLine(" 常備役 & 正常 ");
+
+            else if (BMI >= 24 && BMI < 27)
+                Console.WriteLine(" 常備役 & 過重 ");
+
+            else if (BMI >= 27 && BMI < 30)
+                Console.WriteLine(" 常備役 & 輕肥胖 ");
+
+            else if (BMI >= 30 && BMI < 31)
+                Console.WriteLine(" 常備役 & 中肥胖 ");
+
+            else if (BMI >= 31 && BMI < 31.5)
+                Console.WriteLine(" 替代役 & 中肥胖 ");
+
+            else if (BMI >= 31.5 && BMI < 35)
+                Console.WriteLine(" 免役 & 中肥胖 ");
+
+            else if (BMI >= 35)
+                Console.WriteLine(" 免役 & 重度肥胖 "); 
+            
             // 結束
             Console.ReadLine();
         }
